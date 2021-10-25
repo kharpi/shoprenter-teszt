@@ -65,7 +65,7 @@ h1.nav__mobile-logo span{
 .nav__mobile-top{
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  padding-top: 30px;
   padding-bottom: 20px;
   position: relative;
 }
@@ -218,6 +218,12 @@ h1.nav__mobile-logo span{
   .nav__mobile--active{
     transform: translateX(0);
   }
+  .nav__mobile-top{
+    position: sticky;
+    top: 0;
+    background: var(--primary-color);
+    z-index: 9;
+  }
 }
 
 @media (max-width: 768px){
@@ -225,6 +231,10 @@ h1.nav__mobile-logo span{
   .nav__mobile-search{
     padding-left: 70px;
     padding-top: 30px;
+    position: sticky;
+    top: 0;
+    background: var(--primary-color);
+    z-index: 9;
   }
   .nav__item--xs{display: flex;}
 }
