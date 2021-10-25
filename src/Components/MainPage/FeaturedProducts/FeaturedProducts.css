@@ -1,0 +1,122 @@
+.featured-products{
+  margin-bottom: 85px !important;
+}
+
+.featured-products__items-wrapper {
+  text-align: center;
+}
+
+.featured-products__item{
+  position: relative;
+}
+
+.featured-products__items-wrapper .slick-list {margin: 0 -30px;}
+
+.featured-products__items-wrapper .slick-slide>div {padding: 0 30px;}
+
+.featured-products__image{
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.featured-products__image img{
+  transition: transform .25s ease;
+  z-index:-1; 
+  position: relative;
+}
+
+.featured-products__image:hover img{
+  transform: scale(1.1); 
+}
+
+.featured-products__item:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 50px 50px 0;
+  border-color: transparent #F4F0F1 transparent transparent;
+  position: absolute;
+  top:0;
+  right:0;
+  z-index: 0;
+}
+
+.featured-products__add-to-fav{
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all .25s ease;
+  cursor: pointer;
+}
+
+.featured-products__add-to-fav:hover{
+  color: var(--highlight-color);
+}
+
+.featured-products__add-to-fav svg{
+  position: relative;
+  z-index:1;
+  top: 10px;
+  right: 3px;
+  height: 16px;
+}
+
+.featured-products__lead{
+  font-size: 28px;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+
+.featured-products__title{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.featured-products__desc {
+  color: #A2A2A2;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.featured-products__more{
+  display: flex;
+  justify-content: center;
+  margin-top: 85px;
+}
+
+.featured-products .slick-arrow{
+  display: none !important;
+}
+
+@media (max-width: 786px) {
+  .featured-products__lead{
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  .featured-products__title{
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  .featured-products__desc{
+    font-size: 12px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  .featured-products__more{
+    margin-top: 30px;
+  }
+  .featured-products{
+    margin-bottom: 30px !important; 
+  }
+}

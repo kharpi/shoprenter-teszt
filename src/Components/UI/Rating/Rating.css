@@ -1,0 +1,21 @@
+.rating{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.rating__count {
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  color: #A2A2A2;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px){
+  .rating{
+    margin-bottom: 10px;
+  }
+}

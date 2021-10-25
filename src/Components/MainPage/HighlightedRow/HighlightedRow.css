@@ -1,0 +1,28 @@
+.highlighted-row{
+  background-color: var(--secondary-color);
+  padding: 17px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--highlight-color);
+}
+
+.highlighted-row__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+.highlighted-row__icon {
+  margin-right: 20px;
+  height: 26px;
+}
+
+@media (max-width: 768px){
+  .highlighted-row__icon {
+    height: 18px;
+  }
+  .highlighted-row__text {font-size: 10px}
+}
